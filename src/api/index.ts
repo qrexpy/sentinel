@@ -14,9 +14,9 @@ const client = new Client({
   ],
 });
 
-// Initialize GitHub client
+// Initialize GitHub client (tokenless - public repos only)
 const octokit = new Octokit({
-  auth: process.env.GITHUB_TOKEN,
+  auth: process.env.GITHUB_TOKEN || undefined, // Optional token for rate limits
 });
 
 // Bot login (for development environment)

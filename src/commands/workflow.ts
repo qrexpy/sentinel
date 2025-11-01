@@ -68,6 +68,14 @@ export async function execute(interaction: ChatInputCommandInteraction, octokit:
       await interaction.reply('Error fetching workflows.');
     }
   } else if (subcommand === 'run') {
+    // Running workflows requires authentication
+    if (!process.env.GITHUB_TOKEN) {
+      return await interaction.reply({
+        content: '❌ This command requires a GitHub token. Triggering workflows requires authentication.',
+        ephemeral: true
+      });
+    }
+
     const workflow = interaction.options.getString('workflow')!;
 
     try {

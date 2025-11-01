@@ -19,9 +19,10 @@ const client = new Client({
   ],
 });
 
-// Initialize GitHub client
+// Initialize GitHub client (tokenless - public repos only)
+// This ensures no private repos are accessible
 const octokit = new Octokit({
-  auth: process.env.GITHUB_TOKEN,
+  auth: process.env.GITHUB_TOKEN || undefined, // Optional token for rate limits
 });
 
 // Command collection

@@ -92,8 +92,14 @@ export async function execute(interaction: ChatInputCommandInteraction, octokit:
     if (subcommand === 'list') {
       await listBranches(interaction, octokit, owner, repository);
     } else if (subcommand === 'create') {
+      if (!process.env.GITHUB_TOKEN) {
+        return await interaction.editReply('❌ This command requires a GitHub token. Creating branches requires authentication.');
+      }
       await createBranch(interaction, octokit, owner, repository);
     } else if (subcommand === 'delete') {
+      if (!process.env.GITHUB_TOKEN) {
+        return await interaction.editReply('❌ This command requires a GitHub token. Deleting branches requires authentication.');
+      }
       await deleteBranch(interaction, octokit, owner, repository);
     }
   } catch (error) {

@@ -20,7 +20,6 @@
     "DISCORD_TOKEN": "@discord_token",
     "DISCORD_CLIENT_ID": "@discord_client_id",
     "DISCORD_GUILD_ID": "@discord_guild_id",
-    "GITHUB_TOKEN": "@github_token",
-    "GITHUB_WEBHOOK_SECRET": "@github_webhook_secret" 
+    "GITHUB_TOKEN": "@github_token"
   }
 } 

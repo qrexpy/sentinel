@@ -44,6 +44,14 @@ export async function execute(interaction: ChatInputCommandInteraction, octokit:
     const isPublic = interaction.options.getBoolean('public') || false;
     const description = interaction.options.getString('description') || '';
 
+    // Gist creation requires authentication
+    if (!process.env.GITHUB_TOKEN) {
+      return await interaction.reply({
+        content: '❌ This command requires a GitHub token. Creating gists requires authentication.',
+        ephemeral: true
+      });
+    }
+
     try {
       // Create a deferred reply since it might take a moment
       await interaction.deferReply();

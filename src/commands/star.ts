@@ -30,6 +30,14 @@ export async function execute(interaction: ChatInputCommandInteraction, octokit:
     });
   }
 
+  // Star/unstar requires authentication
+  if (!process.env.GITHUB_TOKEN) {
+    return await interaction.reply({
+      content: '❌ This command requires a GitHub token. Starring repositories requires authentication.',
+      ephemeral: true
+    });
+  }
+
   try {
     // Create a deferred reply since GitHub API interactions can be slow
     await interaction.deferReply();
