@@ -2,16 +2,6 @@
 
 A Discord bot that helps manage GitHub workflows, pull requests, and repository activities directly from Discord.
 
-<div align="center">
-
-<a href="https://github.com/qrexpy/sentinel">
-  <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub" width="64" height="64">
-</a>
-
-**Integrates with GitHub** • [View Repository](https://github.com/qrexpy/sentinel)
-
-</div>
-
 ## Features
 
 - List and check pull requests
@@ -136,6 +126,7 @@ vercel --prod
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
+
 
 <div align="center">
 
