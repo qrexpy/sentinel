@@ -1,4 +1,4 @@
-# CommitWarden
+# Sentinel
 
 A Discord bot that helps manage GitHub workflows, pull requests, and repository activities directly from Discord.
 
@@ -22,8 +22,8 @@ A Discord bot that helps manage GitHub workflows, pull requests, and repository 
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/github-workflow-bot.git
-cd github-workflow-bot
+git clone https://github.com/yourusername/sentinel.git
+cd sentinel
 ```
 
 2. Install dependencies:
