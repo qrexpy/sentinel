@@ -2,6 +2,16 @@
 
 A Discord bot that helps manage GitHub workflows, pull requests, and repository activities directly from Discord.
 
+<div align="center">
+
+<a href="https://github.com/qrexpy/sentinel">
+  <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub" width="64" height="64">
+</a>
+
+**Integrates with GitHub** • [View Repository](https://github.com/qrexpy/sentinel)
+
+</div>
+
 ## Features
 
 - List and check pull requests
@@ -22,7 +32,7 @@ A Discord bot that helps manage GitHub workflows, pull requests, and repository 
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/sentinel.git
+git clone https://github.com/qrexpy/sentinel.git
 cd sentinel
 ```
 
@@ -123,4 +133,18 @@ vercel --prod
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<div align="center">
+
+**Sentinel** integrates with GitHub to provide Discord-based GitHub management.
+
+<a href="https://github.com">
+  <img src="https://github.githubassets.com/assets/GitHub-Logo-ee398b662d42.png" alt="GitHub" height="32">
+</a>
+
+<small>GitHub logos and branding used in accordance with <a href="https://github.com/logos">GitHub's Logo Usage Guidelines</a>.</small>
+
+</div> 
